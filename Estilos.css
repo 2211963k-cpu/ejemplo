@@ -1,0 +1,120 @@
+/* ====== ESTILOS GENERALES ====== */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ====== ENCABEZADO ====== */
+header {
+  background: linear-gradient(135deg, #000, #222);
+  color: #ffcc00;
+  text-align: center;
+  padding: 50px 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  border-bottom: 5px solid #ffcc00; /* CRAP: CONTRASTE */
+}
+header h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+}
+header p {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* ====== MENÚ DE NAVEGACIÓN ====== */
+nav {
+  background-color: #111;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+nav a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 20px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+nav a:hover,
+nav a.activo {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+/* ====== SECCIONES ====== */
+main {
+  flex: 1;
+  padding: 50px 20px;
+  text-align: center;
+}
+main h2 {
+  color: #ffcc00;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+main p {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* ====== GALERÍA DE PRODUCTOS ====== */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.producto {
+  background: #2a2a2a;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+/* CRAP: REPETICIÓN (mismo diseño en todas las tarjetas) */
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 204, 0, 0.4);
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 3px solid #ffcc00;
+}
+.producto h3 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+.producto p {
+  color: #ddd;
+  font-size: 0.95em;
+}
+
+/* ====== PIE DE PÁGINA ====== */
+footer {
+  background: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 3px solid #ffcc00;
+  font-size: 0.9em;
+}
+footer strong {
+  color: #ffcc00;
+}
